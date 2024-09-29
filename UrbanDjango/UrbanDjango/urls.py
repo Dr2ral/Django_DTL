@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import Class_views, func_views
 from task4.views import main, game, cart
+from task5.views import sign_up_by_django
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Class_views.as_view()),
     path('func/', func_views),
     path('platform/', main),
     path('games/', game),
-    path('cart/', cart)
+    path('cart/', cart),
+    path('form/', sign_up_by_django)
 ]
